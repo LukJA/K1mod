@@ -1,0 +1,3 @@
+[submodule "ModularBlocks"]
+	path = ModularBlocks
+	url = https://github.com/LukJA/ModularBlocks
