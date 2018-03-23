@@ -1,0 +1,4 @@
+v1
+GXB_MERGING,PLL Reference Clock Select Block,132371,main:inst15|main_0002:main_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT,fivetoten:inst11|fivetoten_0002:fivetoten_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_REFCLK_SELECT,
+GXB_MERGING,PLL Reconfiguration Block,132367,main:inst15|main_0002:main_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_RECONFIG,fivetoten:inst11|fivetoten_0002:fivetoten_inst|altera_pll:altera_pll_i|general[0].gpll~PLL_RECONFIG,
+GXB_MERGING,Fractional PLL,132029,main:inst15|main_0002:main_inst|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL,fivetoten:inst11|fivetoten_0002:fivetoten_inst|altera_pll:altera_pll_i|general[0].gpll~FRACTIONAL_PLL,

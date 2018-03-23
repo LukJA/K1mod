@@ -1,0 +1,162 @@
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+-- Your use of Intel Corporation's design tools, logic functions 
+-- and other software and tools, and its AMPP partner logic 
+-- functions, and any output files from any of the foregoing 
+-- (including device programming or simulation files), and any 
+-- associated documentation or information are expressly subject 
+-- to the terms and conditions of the Intel Program License 
+-- Subscription Agreement, the Intel Quartus Prime License Agreement,
+-- the Intel MegaCore Function License Agreement, or other 
+-- applicable license agreement, including, without limitation, 
+-- that your use is for the sole purpose of programming logic 
+-- devices manufactured by Intel and sold by Intel or its 
+-- authorized distributors.  Please refer to the applicable 
+-- agreement for further details.
+
+-- Quartus Prime generated Memory Initialization File (.mif)
+
+WIDTH=16;
+DEPTH=4096;
+
+ADDRESS_RADIX=HEX;
+DATA_RADIX=HEX;
+
+CONTENT BEGIN
+	0000  :   20F0;
+	0001  :   210F;
+	0002  :   2201;
+	0003  :   2301;
+	0004  :   3083;
+	0005  :   F083;
+	0006  :   0000;
+	0007  :   E000;
+	0008  :   0000;
+	0009  :   E000;
+	000A  :   0000;
+	000B  :   E000;
+	000C  :   0000;
+	000D  :   E000;
+	000E  :   0000;
+	000F  :   E000;
+	0010  :   0000;
+	0011  :   E000;
+	0012  :   0000;
+	0013  :   E000;
+	0014  :   0000;
+	0015  :   E000;
+	0016  :   0000;
+	0017  :   E001;
+	0018  :   0000;
+	0019  :   E001;
+	001A  :   0000;
+	001B  :   E001;
+	001C  :   0000;
+	001D  :   E001;
+	[001E..001F]  :   0000;
+	0020  :   E001;
+	0021  :   0000;
+	0022  :   E001;
+	0023  :   0000;
+	0024  :   E001;
+	0025  :   0000;
+	0026  :   E001;
+	[0027..0028]  :   0000;
+	0029  :   E000;
+	002A  :   0000;
+	002B  :   E000;
+	002C  :   0000;
+	002D  :   E000;
+	002E  :   0000;
+	002F  :   E000;
+	0030  :   0000;
+	0031  :   E000;
+	0032  :   0000;
+	0033  :   E000;
+	0034  :   0000;
+	0035  :   E000;
+	0036  :   0000;
+	0037  :   E000;
+	0038  :   0000;
+	0039  :   E001;
+	003A  :   0000;
+	003B  :   E001;
+	003C  :   0000;
+	003D  :   E001;
+	003E  :   0000;
+	003F  :   E001;
+	[0040..0041]  :   0000;
+	0042  :   E001;
+	0043  :   0000;
+	0044  :   E001;
+	0045  :   0000;
+	0046  :   E001;
+	0047  :   0000;
+	0048  :   E001;
+	[0049..004A]  :   0000;
+	004B  :   E000;
+	004C  :   0000;
+	004D  :   E000;
+	004E  :   0000;
+	004F  :   E000;
+	0050  :   0000;
+	0051  :   E000;
+	0052  :   0000;
+	0053  :   E000;
+	0054  :   0000;
+	0055  :   E000;
+	0056  :   0000;
+	0057  :   E000;
+	0058  :   0000;
+	0059  :   E000;
+	005A  :   0000;
+	005B  :   E001;
+	005C  :   0000;
+	005D  :   E001;
+	005E  :   0000;
+	005F  :   E001;
+	0060  :   0000;
+	0061  :   E001;
+	[0062..0063]  :   0000;
+	0064  :   E001;
+	0065  :   0000;
+	0066  :   E001;
+	0067  :   0000;
+	0068  :   E001;
+	0069  :   0000;
+	006A  :   E001;
+	[006B..006C]  :   0000;
+	006D  :   E000;
+	006E  :   0000;
+	006F  :   E000;
+	0070  :   0000;
+	0071  :   E000;
+	0072  :   0000;
+	0073  :   E000;
+	0074  :   0000;
+	0075  :   E000;
+	0076  :   0000;
+	0077  :   E000;
+	0078  :   0000;
+	0079  :   E000;
+	007A  :   0000;
+	007B  :   E000;
+	007C  :   0000;
+	007D  :   E001;
+	007E  :   0000;
+	007F  :   E001;
+	0080  :   0000;
+	0081  :   E001;
+	0082  :   0000;
+	0083  :   E001;
+	[0084..0085]  :   0000;
+	0086  :   E001;
+	0087  :   0000;
+	0088  :   E001;
+	0089  :   0000;
+	008A  :   E001;
+	008B  :   0000;
+	008C  :   E001;
+	008D  :   0000;
+	008E  :   A004;
+	[008F..0FFF]  :   0000;
+END;

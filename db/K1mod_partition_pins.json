@@ -1,0 +1,61 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "hsync",
+					"strict" : false
+				},
+				{
+					"name" : "vsync",
+					"strict" : false
+				},
+				{
+					"name" : "VGAG[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAG[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAG[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAG[0]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAR[3]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAR[2]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "VGAR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Enable",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "clock_en",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

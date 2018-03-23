@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Fri Mar 23 21:10:59 2018
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : K1mod
+Top-level Entity Name : K1mod
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 1730
+Total pins : 18
+Total virtual pins : 0
+Total block memory bits : 798,720
+Total DSP Blocks : 2
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 2
+Total DLLs : 0

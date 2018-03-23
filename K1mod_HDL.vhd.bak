@@ -1,0 +1,78 @@
+-- vhdl entity
+library IEEE;
+use IEEE.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.global.all;
+
+
+entity K1mod_hard is 
+	port (	
+		clock : in std_logic;
+		enable : in std_logic;
+		reset : in std_logic
+		);
+		
+end K1mod;
+
+architecture behavioral of K1mod is
+/* PC */
+signal jump_address, current_address : vector_t(11 downto 0); 
+signal jumpen : bit_t;
+
+/* ROM */
+signal current_instruction : vector_t(15 downto 0);
+
+/* ID */
+signal reg_one, reg_two : vector_t(7 downto 0);
+signal address_one, address_two : vector_t(5 downto 0);
+signal clock_one, clock_two : bit_t;
+signal operation : vector_t(3 downto 0);
+signal overflow, equal, zero, jumpen : bit_t;
+signal Eaddress, Ewr, Eenable : bit_t;
+
+/* scratchapd */
+signal data_one, data_two : vector_t(7 downto 0);
+begin
+
+	/* DataIn 		: diabled */
+	/* AddressIn 	: 1 vector containing the input address */
+	/* controlIn	: 2 bit jump enable, clock input*/
+	/* Enable 		: 1 bit enable port */
+	
+	/* DataOut 		: disabled */
+	/* AddressOut 	: 1 vector containing the output address  */
+	/* controlOut	: disabled */
+	/* Reset 		: 1 bit reset port */
+	PC: entity work.U_adjustcounter generic map (12) port map (open, jump_address, (jumpen & clock), enable, open, current_address, open, reset);
+	
+	/* IP generated */
+	ROM: entity work.ROMip port map (current_address, (not clock), current_instruction);
+	
+	/* design specific */
+	ID: entity work.ID port map(current_address, reg_one, , , address_one, address_two, operation ,overflow, zero, equal, jump_address, jumpen, Eaddress, Ewr, Eenable);
+	
+	/* DataIn 		: 2 vector holding data in (A,B) */
+	/* AddressIn 	: 2 vector holding address in (A,B) */
+	/* controlIn	: 2 bit wide clock (A,B) */
+	/* Enable 		: 1 bit enable port */
+	
+	/* DataOut 		: 2 vector output containing the data */
+	/* AddressOut 	: 2 vector address followthrough */
+	/* controlOut	: disabled */
+	/* Reset 		: 1 bit reset port */
+	Scratchpad: entity work.U_mem_page2p generic map (8,6,64) port map ([reg_one,reg_two], [address_one, address_two], (clock_one and clock) & (clock and clock_two), enable,
+																								[data_one, data_two], open, open, reset);
+	
+	/* DataIn 		: 2 vectors holding the data to be computed */
+	/* AddressIn 	: 4 bit wide vector selecting the chosen operation */
+	/* controlIn	: 1 bit wide carry in vector for addition */
+	/* Enable 		: 1 bit enable port */
+	
+	/* DataOut 		: 1 vector output containing the data */
+	/* AddressOut 	: 4 bit wide vector - follows through */
+	/* controlOut	: 2 bit carry out vector */
+	/* Reset 		: 1 bit reset port */
+	ALU: entity work.U_ALU_unsigned generic map (8,4) port map ([data_one, data_two], operation, open, enable, reg_two, open, open, reset);
+	
+
+end behavioural;

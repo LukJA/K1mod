@@ -1,0 +1,135 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 240 256)
+	(text "ID" (rect 5 0 14 12)(font "Arial" ))
+	(text "inst" (rect 8 224 20 236)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "CIR[15..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "CIR[15..0]" (rect 21 27 62 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32)(line_width 3))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "OVERFLOW" (rect 0 0 60 12)(font "Arial" ))
+		(text "OVERFLOW" (rect 21 43 81 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48)(line_width 1))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "ZERO" (rect 0 0 29 12)(font "Arial" ))
+		(text "ZERO" (rect 21 59 50 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64)(line_width 1))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "EQIN" (rect 0 0 23 12)(font "Arial" ))
+		(text "EQIN" (rect 21 75 44 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
+		(pt 224 32)
+		(output)
+		(text "reg_D1[7..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "reg_D1[7..0]" (rect 154 27 203 39)(font "Arial" ))
+		(line (pt 224 32)(pt 208 32)(line_width 3))
+	)
+	(port
+		(pt 224 48)
+		(output)
+		(text "reg_clk1_EN" (rect 0 0 53 12)(font "Arial" ))
+		(text "reg_clk1_EN" (rect 150 43 203 55)(font "Arial" ))
+		(line (pt 224 48)(pt 208 48)(line_width 1))
+	)
+	(port
+		(pt 224 64)
+		(output)
+		(text "reg_clk2_EN" (rect 0 0 54 12)(font "Arial" ))
+		(text "reg_clk2_EN" (rect 149 59 203 71)(font "Arial" ))
+		(line (pt 224 64)(pt 208 64)(line_width 1))
+	)
+	(port
+		(pt 224 80)
+		(output)
+		(text "reg_addr1[5..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "reg_addr1[5..0]" (rect 143 75 203 87)(font "Arial" ))
+		(line (pt 224 80)(pt 208 80)(line_width 3))
+	)
+	(port
+		(pt 224 96)
+		(output)
+		(text "reg_addr2[5..0]" (rect 0 0 61 12)(font "Arial" ))
+		(text "reg_addr2[5..0]" (rect 142 91 203 103)(font "Arial" ))
+		(line (pt 224 96)(pt 208 96)(line_width 3))
+	)
+	(port
+		(pt 224 112)
+		(output)
+		(text "ALU_OP[3..0]" (rect 0 0 60 12)(font "Arial" ))
+		(text "ALU_OP[3..0]" (rect 143 107 203 119)(font "Arial" ))
+		(line (pt 224 112)(pt 208 112)(line_width 3))
+	)
+	(port
+		(pt 224 128)
+		(output)
+		(text "PCOut[11..0]" (rect 0 0 49 12)(font "Arial" ))
+		(text "PCOut[11..0]" (rect 154 123 203 135)(font "Arial" ))
+		(line (pt 224 128)(pt 208 128)(line_width 3))
+	)
+	(port
+		(pt 224 160)
+		(output)
+		(text "addDat" (rect 0 0 28 12)(font "Arial" ))
+		(text "addDat" (rect 175 155 203 167)(font "Arial" ))
+		(line (pt 224 160)(pt 208 160)(line_width 1))
+	)
+	(port
+		(pt 224 176)
+		(output)
+		(text "readWri" (rect 0 0 33 12)(font "Arial" ))
+		(text "readWri" (rect 170 171 203 183)(font "Arial" ))
+		(line (pt 224 176)(pt 208 176)(line_width 1))
+	)
+	(port
+		(pt 224 192)
+		(output)
+		(text "enab" (rect 0 0 18 12)(font "Arial" ))
+		(text "enab" (rect 185 187 203 199)(font "Arial" ))
+		(line (pt 224 192)(pt 208 192)(line_width 1))
+	)
+	(port
+		(pt 224 144)
+		(bidir)
+		(text "jumpEn" (rect 0 0 30 12)(font "Arial" ))
+		(text "jumpEn" (rect 173 139 203 151)(font "Arial" ))
+		(line (pt 224 144)(pt 208 144)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 208 224)(line_width 1))
+	)
+)
